@@ -3,60 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
-    <link rel="stylesheet" href="../CSS/position.css">
+    <title>Registration Form</title>
 </head>
 <body align="center">
-    <div class="Data" id="Application">
-        <header>
-            <h1>Forms</h1>
-        </header>
-        <main>
-            <form>
-                <label>Name:</label>
-                <input type="text" placeholder="Navateja">
-                <br><br>
-                <label>Email:</label>
-                <input type="email" placeholder="navatejar80@gmail.com">
-                <br><br>
-                <label>Password:</label>
-                <input type="password" placeholder="********">
-                <br><br>
-                <label>Phone no:</label>
-                <input type="tel" placeholder="1234567890">
-                <br><br>
-                <label>Gender:</label>
-                <input type="radio" name="gender" id="1">Male
-                <input type="radio" name="gender" id="2">Female
-                <br><br>
-                <label>Qualification:</label>
-                <input type="checkbox">B.Tech
-                <input type="checkbox">M.Tech
-                <br><br>
-                <label>Country:</label>
-                <select>
-                    <option>India</option>
-                    <option>USA</option>
-                    <option>UK</option>
-                    <option>Canada</option>
-                </select>
-                <br><br>
-                <label>Date of birth:</label>
-                <input type="datetime-local">
-                <br><br>
-                <label>Color:</label>
-                <input type="color">
-                <br><br>
-                <label>Image:</label>
-                <input type="file">
-                <br><br>
-                <button type="submit">Submit</button>
-            </form>
 
-        </main>
-        <footer>
-            <p>© 2024 MERN Stack Application. All rights reserved.</p>
-        </footer>
-    </div>   
+    <h1>Registration Form</h1>
+
+    <form onsubmit="show(); return false;">
+
+        <label>Name:</label>
+        <input type="text" id="name" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" id="password" required>
+        <br><br>
+
+        <label>Phone:</label>
+        <input type="tel" id="phone" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <br><br>
+
+        <label>Qualification:</label>
+        <input type="checkbox" name="qualify" value="10th">10th
+        <input type="checkbox" name="qualify" value="12th">12th
+        <input type="checkbox" name="qualify" value="B.Tech">B.Tech
+        <input type="checkbox" name="qualify" value="M.Tech">M.Tech
+        <input type="checkbox" name="qualify" value="PhD">PhD
+        <input type="checkbox" name="qualify" value="Other">Other
+        <br><br>
+
+        <label>Country:</label>
+        <select id="country">
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+        </select>
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="dob">
+        <br><br>
+
+        <label>Image:</label>
+        <input type="file" id="image">
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Submitted Details</h2>
+
+    <div id="result"></div>
+
+    <script src="../JS/script.js"></script>
+
 </body>
 </html>

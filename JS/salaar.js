@@ -1,0 +1,1 @@
+const vegetables=["Potato","Tomato","Onion","Carrot","Cabbage","Cauliflower"];

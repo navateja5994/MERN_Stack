@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxes</title>
-    <link rel="stylesheet" href="../CSS/flux.css">
+    <title>Event Listeners Demo</title>
+    <link rel="stylesheet" href="../CSS/flex.css">
 </head>
 <body>
+
     <div class="container">
         <div class="box">Apple</div>
         <div class="box">Banana</div>
         <div class="box">Cherry</div>
         <div class="box">Grape</div>
     </div>
+
+    <div id="card">
+        <div onclick="moveleft()">Left</div>
+        <div onclick="moveright()">Right</div>
+        <div onclick="moveup()">Up</div>
+        <div onclick="movedown()">Down</div>
+    </div>
+
+    <h2>Event Output</h2>
+    <p id="output">Perform any event...</p>
+
+    <script src="../JS/move.js"></script>
+
 </body>
 </html>
