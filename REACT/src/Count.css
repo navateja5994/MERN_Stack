@@ -1,0 +1,8 @@
+.count{
+    color: greenyellow;
+    gap: 30px;
+}
+.counting{
+    display: flex;
+    justify-content: center;
+}
