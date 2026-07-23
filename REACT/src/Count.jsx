@@ -16,8 +16,8 @@ function Count() {
     <div align="center">
       <h1>Count: {count}</h1>
 
-      <button onClick={() => setCount(count + 1)}>+1</button>
-      <button onClick={() => setCount(count - 1)}>-1</button>
+      <button onDoubleClick={() => setCount(count + 1)}>+1</button>
+      <button onDoubleClick={() => setCount(count - 1)}>-1</button>
 
       <h3>{string ? "Hello" : "iPhone"}</h3>
       <button onClick={() => setString(!string)}>Change</button>
